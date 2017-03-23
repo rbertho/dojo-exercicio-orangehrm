@@ -1,5 +1,8 @@
-Dado(/^que esteja na home do site orangehrm logado como Admin$/) do
+Dado(/^que esteja na home do site orangehrm$/) do
 	visit('https://enterprise-demo.orangehrmlive.com/')
+end
+
+Dado(/^logado como Admin$/) do
 	fill_in('txtUsername', :with => 'Admin')
 	fill_in('txtPassword', :with => 'admin')
   	find('#btnLogin').click
