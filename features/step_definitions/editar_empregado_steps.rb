@@ -1,23 +1,18 @@
-#Dado(/^que esteja na home do site orangehrm logado como Admin$/) do
-#	visit('https://enterprise-demo.orangehrmlive.com/')
-#	fill_in('txtUsername', :with => 'Admin')
-#	fill_in('txtPassword', :with => 'admin')
-# 	find('#btnLogin').click
-#end
+Quando(/^clicar no primeiro funcionário da lista$/) do
+  find_link('Ava').click
+end
 
-Quando(/^acessar o link PIM e clicar no primeiro funcionário da lista e clicar em editar e editar os dados do funcionario e clicar em Save$/) do
-	find('#menu_pim_viewPimModule').click
-	find_link('Ava').click
+Quando(/^clicar em editar$/) do
+  find('#btnSave').click
+end
 
-	# Editar
-	find('#btnSave').click
-
-	# Alterar os campos dos conteúdos desejados
+Quando(/^editar os dados do funcionario$/) do
 	fill_in('personal[txtEmpMiddleName]', :with => 'Magalhães')
 	fill_in('personal[txtEmpFirstName]', :with => 'José')
+end
 
-	# Salvar
-	find('#btnSave').click
+Quando(/^clicar em Save$/) do
+  find('#btnSave').click
 end
 
 Entao(/^validar se o funcionário foi alterado com sucesso, validando a msg Successfully Saved$/) do

@@ -1,3 +1,4 @@
+C:\dojo\dojo-exercicio-orangehrm (master)
 λ cucumber
 Using the default profile...
 # language: pt
@@ -10,7 +11,10 @@ Para ter um novo funcionario da lista de empregados
 
   Cenario: Cadastrar um novo funcionário
     Dado que esteja na home do site orangehrm logado como Admin
-    Quando acessar o link PIM e clicar em Add Employee e preencher os dados do novo funcionário
+    Quando acessar o link PIM
+    E clicar em Add Employee
+    E preencher os dados do novo funcionário
+    E clicar em salvar
     Entao validar se o funcionário foi cadastrado com sucesso, validando a msg Successfully Saved
 
 # language: pt
@@ -23,12 +27,16 @@ Para ter um funcionario com os dados atualizados
 
   Cenario: Editar os dados de um funcionário
     Dado que esteja na home do site orangehrm logado como Admin
-    Quando acessar o link PIM e clicar no primeiro funcionário da lista e clicar em editar e editar os dados do funcionario e clicar em Save
+    Quando acessar o link PIM
+    E clicar no primeiro funcionário da lista
+    E clicar em editar
+    E editar os dados do funcionario
+    E clicar em Save
     Entao validar se o funcionário foi alterado com sucesso, validando a msg Successfully Saved
 
 2 scenarios (2 passed)
-6 steps (6 passed)
-0m23.548s
+13 steps (13 passed)
+0m23.515s
 
 C:\dojo\dojo-exercicio-orangehrm (master)
 λ
