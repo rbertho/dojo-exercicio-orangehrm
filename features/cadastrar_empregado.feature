@@ -9,5 +9,8 @@ Para ter um novo funcionario da lista de empregados
 
 Cenario: Cadastrar um novo funcionário
 	Dado que esteja na home do site orangehrm logado como Admin
-	Quando acessar o link PIM e clicar em Add Employee e preencher os dados do novo funcionário
+	Quando acessar o link PIM 
+	E clicar em Add Employee 
+	E preencher os dados do novo funcionário
+	E clicar em salvar
 	Entao validar se o funcionário foi cadastrado com sucesso, validando a msg Successfully Saved 
