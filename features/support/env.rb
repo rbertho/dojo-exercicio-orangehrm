@@ -14,7 +14,7 @@ end
 Capybara.default_driver = :selenium
 
 # Timeout da conexão
-Capybara.default_max_wait_time = 15
+Capybara.default_max_wait_time = 6
 
 # Maximizar a tela ao iniciar o teste
 Capybara.page.driver.browser.manage.window.maximize

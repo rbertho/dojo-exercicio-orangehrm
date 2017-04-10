@@ -1,5 +1,5 @@
 Quando(/^clicar no primeiro funcionário da lista$/) do
-  find_link('Ava').click
+  find_link('369').click
 end
 
 Quando(/^clicar em editar$/) do

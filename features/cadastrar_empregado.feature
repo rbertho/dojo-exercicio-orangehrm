@@ -15,5 +15,7 @@ Cenario: Cadastrar um novo funcionário
 		E clicar em Add Employee 
 		E preencher os dados do novo funcionário
 		E clicar em salvar
-		
-	Entao validar se o funcionário foi cadastrado com sucesso, validando a msg Successfully Saved 
+
+	Entao validar se o funcionário foi cadastrado com sucesso, verificando o seu nome na tela de detalhes de usuário 
+
+	
